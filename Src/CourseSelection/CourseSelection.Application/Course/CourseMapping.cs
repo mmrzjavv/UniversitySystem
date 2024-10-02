@@ -1,6 +1,11 @@
-﻿namespace CourseSelection.Application.Course;
+﻿using AutoMapper;
 
-public class CourseMapping
+namespace CourseSelection.Application.Course;
+
+public class CourseMapping : Profile
 {
-    
+    public CourseMapping()
+    {
+        CreateMap<Domain.Course.Courses, CourseDto.GetCoursesDto>().ReverseMap();
+    }
 }

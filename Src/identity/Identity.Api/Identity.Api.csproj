@@ -32,6 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\CourseSelection\CourseSelection.infrastructure\CourseSelection.infrastructure.csproj" />
       <ProjectReference Include="..\Identity.Application\Identity.Application.csproj" />
     </ItemGroup>
 
